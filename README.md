@@ -53,16 +53,16 @@ The tool reads from macOS Keychain. Store your keys:
 
 ```bash
 # Anthropic (required)
-security add-generic-password -s "com.shadow.control" -a "apiKey_anthropic" -w "sk-ant-..." -U
+security add-generic-password -s "com.your-project.keys" -a "apiKey_anthropic" -w "sk-ant-..." -U
 
 # Google Gemini (optional)
-security add-generic-password -s "com.shadow.control" -a "apiKey_gemini" -w "AI..." -U
+security add-generic-password -s "com.your-project.keys" -a "apiKey_gemini" -w "AI..." -U
 
 # Moonshot/Kimi (optional)
-security add-generic-password -s "com.shadow.control" -a "apiKey_moonshot" -w "sk-..." -U
+security add-generic-password -s "com.your-project.keys" -a "apiKey_moonshot" -w "sk-..." -U
 
 # MiniMax (optional)
-security add-generic-password -s "com.shadow.control" -a "apiKey_minimax" -w "..." -U
+security add-generic-password -s "com.your-project.keys" -a "apiKey_minimax" -w "..." -U
 ```
 
 Or modify the `KEYCHAIN_SERVICE` and `KEYCHAIN_ACCOUNTS` in `ask.py` to match your own keychain setup.
